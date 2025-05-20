@@ -18,8 +18,9 @@ ggplot(hsold, aes(x = age, y = price)) +
        y = "Price (USD)") +
   theme_minimal()
 
-### 🏠 House Price vs Square Footage
-![Price vs Sqft](visualizations/price_vs_sqft.png)
 
-### 🕒 House Price vs Age
+ggsave("visualizations/price_vs_sqft.png", width = 8, height = 5)
+![Price vs Sqft](visualizations/price_vs_sqft.png
+
+ggsave("visualizations/price_vs_age.png", width = 8, height = 5)
 ![Price vs Age](visualizations/price_vs_age.png)

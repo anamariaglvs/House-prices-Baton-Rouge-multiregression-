@@ -13,3 +13,22 @@ summary(model6)
 model7<-lm(log(price/1000) ~ sqft + bedrooms + baths + age + I(age^2) + owner + pool + traditional + fireplace + waterfront, data = houses)
 summary(model7)
 ![Rplot01](https://github.com/user-attachments/assets/d64677d6-4961-4fd7-b9ce-b03d91a02f6c)
+
+💡 Why is this valuable?
+1. Real-World Application
+Predicting house prices is essential for real estate agents, appraisers, developers, and buyers.
+
+Helps determine fair market value and assess investment opportunities.
+
+2. Actionable Insights
+Find which features truly drive price: size? age? pool?
+
+Know what renovations or features add the most value.
+
+ 3. Improved Accuracy with Log Model
+The log transformation accounts for heteroskedasticity (non-constant variance), making predictions more reliable.
+
+More realistic modeling of multiplicative relationships.
+
+ 4. Quantifies Uncertainty
+Confidence intervals help buyers/sellers understand the likely price range, not just a point estimate.
